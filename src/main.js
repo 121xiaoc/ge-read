@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import './assets/style/reset.scss'
 import middleware from './middleware'
+import './assets/style/reset.scss'
+import './utils/intercepors.js'
 
 middleware.install(Vue) // 绑定中间件
 
