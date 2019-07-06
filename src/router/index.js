@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import ChapterContent from '../pages/ChapterContent/ChapterContent'
+const ChapterContent = () => import('../pages/ChapterContent/ChapterContent')
+const Index = () => import('../pages/Index/Index')
 
 Vue.use(Router)
 
@@ -10,7 +11,11 @@ const router = new Router({
     routes: [
         {
             path: '/',
-            redirect: '/chapter-content',
+            redirect: '/Index',
+        },
+        {
+            path: '/Index',
+            component: Index
         },
         {
             path: '/chapter-content',

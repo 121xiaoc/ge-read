@@ -5,7 +5,7 @@
 </template>
 
 <style>
-#app {
+#app, .page {
   height: 100%;
 }
 </style>

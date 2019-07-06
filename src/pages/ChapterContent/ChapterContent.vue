@@ -22,7 +22,6 @@ export default {
         async getMessage () {
             const data = {}
             const res = await  NovelApi.getNovelChapterContent(data)
-            console.log(res)
             if (res.code === 200) {
                 this.chapterName = res.data.name
                 this.chapterContent =  res.data.content
